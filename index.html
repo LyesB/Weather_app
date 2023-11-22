@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="form-container">
+        <form action="" id="search">
+          <button type="button" id="search-button" onclick="searchLocation()">
+            <img
+              src="/home/geedorah/repos/Weather_app/search.svg"
+              alt=""
+              id="search-icon"
+            />
+          </button>
+          <input
+            type="search"
+            placeholder="Search location"
+            id="search-input"
+          />
+        </form>
+      </div>
+      <div class="content">
+        <div id="info">
+          <div id="temp"></div>
+          <div id="textIcon">
+            <div id="text"></div>
+            <img src="" alt="" id="icon" />
+          </div>
+        </div>
+        <div id="condition">
+          <div id="location"></div>
+          <div id="lastupdated"></div>
+          <div id="feelslike"></div>
+        </div>
+      </div>
+      <div
+        id="credit"
+        style="
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          text-align: center;
+        "
+      >
+        <span id="bg-image-credit"></span>
+        <br />
+        Powered by
+        <a href="https://www.weatherapi.com/" title="Free Weather API"
+          >WeatherAPI.com</a
+        >
+        <br />
+      </div>
+    </div>
+
+    <script src="/home/geedorah/repos/Weather_app/script.js"></script>
+  </body>
+</html>
